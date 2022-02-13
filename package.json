@@ -3,7 +3,11 @@
   "version": "2.2.21",
   "description": "vuejs展示json的组件",
   "main": "vue-json-viewer.js",
-  "files": ["vue-json-viewer.js", "ssr.js", "style.css"],
+  "files": [
+    "vue-json-viewer.js",
+    "ssr.js",
+    "style.css"
+  ],
   "directories": {
     "lib": "./lib",
     "example": "./example"
@@ -12,13 +16,17 @@
     "build": "npm run build:browser && npm run build:ssr",
     "build:browser": "webpack --config ./build/webpack.config.js",
     "build:ssr": "webpack --config ./build/webpack.ssr.config.js",
-    "example": "webpack-dev-server --config ./example/build/webpack.dev.conf.js"
+    "example": "webpack-dev-server --config ./example/build/webpack.dev.conf.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenfengjw163/vue-json-viewer.git"
   },
-  "keywords": ["vue", "json"],
+  "keywords": [
+    "vue",
+    "json"
+  ],
   "homepage": "https://github.com/chenfengjw163/vue-json-viewer#readme",
   "author": {
     "name": "陈峰",
